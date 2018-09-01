@@ -1,0 +1,85 @@
+<html charset="lang en">
+  <head>
+    <title>Survey Form</title>
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+  </head>
+  <body>
+    <div class="main">
+      <header>
+        <h1 id="title">RF Travel Survey: <br> Favorite Caribbean Islands</h1>
+        <h5 class="intro">Let our escapes be the key to your relaxation! </h5>
+        <p id="description"> Everyone loves a vacation! One of the most relaxing vacations happens on a Caribbean Island. To serve our customers better, we want to know about your favorite Caribbean Islands!  </p>
+      </header>
+      <!--Begin Form Section-->
+      <section class="form-container">
+        <form id="survey-form">
+          <!--Begin Personal Information-->
+          <h5 class="travel">Please fill out our travel questionnaire about your travel adventures to the Caribbean Islands. </h5>
+          <div class="personal">
+            <legend><u>Personal Information</u></legend>
+            <label for="name" id="name-label">Full Name</label><br>
+            <input type="text" id="name" name="fullname" placeholder="Enter.." size="30" required><br>
+            <div class="gender">
+              <label for="gender" id="gender-label">Gender</label><br>
+              <label for="male">Male</label>
+              <input type="radio" name="gender" id="male" value="male"><br>
+              <label for="female">Female</label>
+              <input type="radio" name="gender" id="female" value="female"><br>
+              <label for="nonbinarygender">NonBinary/3rdGender</label>
+              <input type="radio" name="gender" id="nonbinarygender" value="Non-binary/third gender"><br>
+              <label for="prefernotsay">Prefer Not to Say</label><input type="radio" name="gender" id="prefernotsay" value="prefernotsay"><br>
+             </div>
+            <label for="age" id="number-label">Age</label><br>
+            <input type="number" id="number" name="age" min="18" max="100" size="50" placeholder="No." required><br>
+            <label for="country" id="country-label">Country</label><br>
+            <input type="text" id="country" name="country" placeholder="Enter" size="30" required><br>
+            <label for="email" id="email-label">Email Address</label><br>
+            <input type="email" id="email" name="email" placeholder="Enter" size="30" required><br>
+          </div> <!--End Personal Information-->
+          <!--Begin Travel Questionnaire-->
+          <div class="questions">
+            <legend><u>Travel Questionnaire</u></legend>
+            <p>How many Caribbean Islands have you traveled to prior to this date?</p><br>
+            <!--Begin Dropdown-->
+            <select id="dropdown" required>
+              <option value="lessthan5">Less than 5</option>
+              <option value="5to7">5 to 7</option>
+              <option value="morethan7">More than 7</option>
+            </select><br> <!--End Dropdown-->
+           <!--Begin Checkbox--> 
+           <div id="checkbox">
+            <p>Which Caribbean countries have you visited? Check all that apply.</p><br>
+           <input type="checkbox" name="country1" id="country1" value="cuba"><label for="country1">Cuba</label><br>
+             
+            <input type="checkbox" name="country2" id="country2" value="haiti"><label for="country2">Haiti</label><br>
+            <input type="checkbox" name="country3" id="country3" value="dominicanrepublic"><label for="country3">Dominican Republic</label><br>
+             <input type="checkbox" name="country4" id="country4" value="puertorico"><label for="country4">Puerto Rico</label><br>
+          <input type="checkbox" name="country5" value="jamaica" id="country5"><label for="country5">Jamaica</label><br>
+          <input type="checkbox" name="country6" value="trinidad" id="country6"><label for="country6">Trinidad and Tobago</label><br>
+          <input type="checkbox" name="country7" value="bahamas" id="country7"><label for="country7">Bahamas</label><br>
+          <input type="checkbox" name="country8" value="bermuda" id="country8"><label for="country8">Bermuda</label><br>
+             <input type="checkbox" name="country9" value="grenada" id="country9"><label for="country9">Grenada</label><br>
+             <input type="checkbox" name="country10" value="turksandcaicos" id="country10"><label for="country10">Turks and Caicos Islands</label><br>
+           </div> <!-- End Checkbox-->
+           <div class="comments">
+            <p>Please share any additional comments you have about traveling in the Caribbean.</p>
+            <textarea id="textarea" name="message" placeholder="Additional Comments.." style="height:200px; width: 100%"></textarea> <!--End Text Area-->
+            </div>
+          </div> <!--End Travel Questionnaire-->
+         <div class="submit">
+          <input id="submit" type="submit" value="Submit" required>
+         </div>
+        </form>
+        
+      </section>
+     </div>
+     <footer>
+        <p class="credit">2018 T.Lanette Pollard for<a href="http://www.rogetfreelancing.com"> Roget Freelancing</a></p>
+     </footer>
+    
+    
+    
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+  </body>
+</html>

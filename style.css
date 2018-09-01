@@ -1,0 +1,418 @@
+/* Colors: ffffe3, f7f7f7, 5c636e, f8b500, 393e46, f7f7f7;
+Fonts: @import url('https://fonts.googleapis.com/css?family=Fontdiner+Swanky|Montserrat'); 
+font-family: 'Fontdiner Swanky', cursive;
+font-family: 'Montserrat', sans-serif; font-family: 'Indie Flower', cursive;*/
+
+/* Designed for Mobile Devices First */
+/*
+* { outline: 1px solid black;} */
+
+html {
+  background-color: #f7f7f7;
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1148131/pier-440339_1920.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body, header, main, section, form, footer {
+  display: flex;
+}
+
+body, header, main, section, form, footer {
+  flex-direction: column;
+}
+
+body {
+  background-color: /*white*/ 
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  padding: auto;
+  line-height: 1.5;
+  font-family: 'Montserrat', sans-serif;
+  color: black;
+}
+
+p {
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 0;
+  padding: 10px;
+}
+
+/* Header Style */
+
+header {
+  display: block;
+  margin: 0 10px 10px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-right: 16px;
+  padding-left: 16px;
+  text-align: center;
+}
+h1 {
+  display: block;
+  background-color: rgba(255,255,255, 0.25);
+  box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.50);
+  font-family: 'Fontdiner Swanky', cursive;
+  font-weight 400;
+  margin: 10px 0;
+  font-size: 2rem;
+}
+
+h5.intro {
+  background-color: rgba(255,255,255, 0.6);
+  box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.50);
+  font-family: 'Fontdiner Swanky', cursive;
+  font-size: 6vw;
+  font-style: italic;
+}
+
+ #description {
+  display: block;
+  background-color: rgba(255,255,255, 0.6);
+   box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.50);
+  text-align: center;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 4px;
+   font-size: 14px;
+}
+
+
+/*Form Container Style */
+.form-container {
+  background-color: /*white;*/rgba(255,255,255, 0.6);
+  margin: 30px;
+  box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.50);
+  border-radius: 5px;
+  padding: 20px;
+}
+
+/* Form Design */
+ h5.travel{
+    display: block;
+    margin: auto;
+    padding: 0.15px 20px;
+    text-align: center;
+    font-size: 18px;
+    -webkit-margin-before: 1.67em;
+   -webkit-margin-after: 1.67em;
+   -webkit-margin-start: 0px;
+   -webkit-margin-end: 0px;
+   
+}
+
+legend {
+  font-weight: 700;
+}
+
+.personal, .questions, .comments {
+  margin: 20px;
+}
+
+input[type=text], input[type=email],  select, textarea{
+  width: 100%;
+  background-color: #f8f8f8;
+  margin: 8px 0;
+  padding: 12px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+input[type=number] {
+  margin: 8px 0;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+label {
+  font-weight: 700;
+  margin-top: 10px;
+  margin-bottom: 0;
+  padding: 12px 12px 12px 10px;
+  display: inline-block;
+}
+
+input[type=submit]{
+  background-color: #5c636e;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  float: right;
+  margin: 10px;
+}
+
+input[type=submit]:hover {
+  background-color: #f8b500;
+}
+
+/*Footer Styling*/
+footer {
+  width: 100%;
+  background-color: #393e46;
+  color: white;
+  text-align: center;
+  align-items: center;
+  padding-top: 10px;
+}
+p.credit {
+  font-family: 'Indie Flower', cursive;
+  font-size: 20px;
+  font-weight: 100;
+  padding: 5px;
+  box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19);
+  
+}
+
+p a {
+  color: white;
+}
+
+p a:hover {
+  color: #f8b500;
+}
+
+
+/*Media Queries: Larger Screens, Max-width 1200px*/
+
+@media screen and (min-width: 1200px) {
+  header {
+    margin: 10px 100px;
+  }
+  h1 {
+    font-size: 4vw;
+  }
+  h5.intro {
+    margin: 15px 2px;
+    padding: 10px 0;
+    font-size: 3vw;
+  }
+  #description {
+    margin: 15px 3px;
+    font-size: 18px;
+  }
+  .form-container {
+    margin: 0 123px 50px;
+  }
+  
+  h5.travel {
+    font-size: 22px;
+    margin: 20px;
+  }
+  
+  #survey-form {
+    margin-left: 40px;
+    font-size: 18px;
+  }
+  input[type=text], input[type=email],  select, textarea {
+    height: 40px;
+    width: 90%!important;
+  }
+  input[type=submit] {
+    margin: 10px 50px 30px;
+    font-size: 20px;
+  }
+  select {
+    margin-top: -8px;
+    margin-bottom: 12px;
+  }
+  p input[type=checkbox]{
+    margin-top: 5px;
+  }
+   
+  }
+
+@media screen and (max-width: 1199.98px) {
+  header {
+    margin: 10px 100px;
+  }
+  h1 {
+    font-size: 4vw;
+  }
+  h5.intro {
+    margin: 15px 2px;
+    padding: 10px 0;
+    font-size: 3vw;
+  }
+  #description {
+    margin: 15px 3px;
+    font-size: 18px;
+  }
+  .form-container {
+    margin: 0 123px 50px;
+  }
+  
+  h5.travel {
+    font-size: 22px;
+    margin: 20px;
+  }
+  
+  #survey-form {
+    margin-left: 40px;
+    font-size: 18px;
+  }
+  input[type=text], input[type=email],  select, textarea {
+    height: 40px;
+    width: 90%!important;
+  }
+  input[type=submit] {
+    margin: 10px 50px 30px;
+    font-size: 20px;
+  }
+  select {
+    margin-top: -8px;
+    margin-bottom: 12px;
+  }
+  p input[type=checkbox]{
+    margin-top: 5px;
+  }
+}
+
+
+ /*Media Queries: Tablets */
+
+@media screen and (max-width: 768px){
+  header {
+    margin: 10px 50px;
+  }
+  h1 {
+    font-size: 5vw;
+  }
+  h5.intro {
+    margin: 15px 2px;
+    padding: 10px 0;
+    font-size: 3.5vw;
+  }
+  #description {
+    margin: 10px 6px;
+    padding: 20px;
+    text-align: center;
+   
+  }
+  .form-container {
+    margin: 0 75px 50px;
+  }
+  #survey-form {
+    font-size: 16px;
+  }
+  h5.travel {
+    font-size: 18px;
+  }
+}
+
+/*Media Queries: Smaller Devices */
+
+@media screen and (max-width: 566px){
+  header {
+    margin: 10px 50px;
+  }
+  h1 {
+    font-size: 5.5vw;
+  }
+  h5.intro {
+    margin: 30px 2px;
+    padding: 10px 0;
+    font-size: 4vw;
+  }
+  #description {
+    margin: 10px 3px;
+    font-size: 13px;
+  }
+  .form-container {
+    margin: 0 60px 50px;
+  }
+  #survey-form {
+    font-size: 14px;
+    margin-left: 10px;
+  }
+  h5.travel {
+    margin: 10px;
+    padding-left: 0px;
+    font-size: 16px;
+    text-align: center;
+  }
+  
+}
+
+@media screen and (max-width: 425px){
+  header {
+    margin: 10px 50px;
+  }
+  h1 {
+    font-size: 6.5vw;
+    margin: 10px -10px;
+    padding: 10px;
+  }
+  h5.intro {
+    margin: 30px -5px;
+    padding: 10px 10px;
+    font-size: 5vw;
+  }
+  #description {
+    margin: 10px 3px;
+    padding: 12px 25px;
+    text-align: justify;
+    font-size: 14px;
+  }
+  .form-container {
+    margin: 0 70px 50px;
+  }
+  #survey-form {
+    font-size: 12px;
+    margin: -5px -10px;
+  }
+  h5.travel {
+    font-size: 16px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 325px){
+  
+  header {
+    margin: 10px 50px;
+  }
+  h1 {
+    margin: 20px -7px;
+    font-size: 8vw;
+    padding: 10px 10px;
+  }
+  h5.intro {
+    margin: 20px -7px;
+    padding: 10px 10px;
+    font-size: 6vw;
+  }
+  #description {
+    margin: 10px -12px;
+    padding: 20px;
+    font-size: 12px;
+    text-align: center;
+  }
+  .form-container {
+    margin: 0 40px 50px;
+    
+  }
+  #survey-form {
+    font-size: 11px;
+    margin: -5px -10px;
+  }
+  h5.travel {
+    font-size: 14px;
+    text-align: center;
+    margin-right: -5px;
+  }
+  
+}
