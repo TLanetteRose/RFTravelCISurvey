@@ -9,7 +9,7 @@ font-family: 'Montserrat', sans-serif; font-family: 'Indie Flower', cursive;*/
 
 html {
   background-color: #f7f7f7;
-  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1148131/pier-440339_1920.jpg);
+  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1148131/pier-440339_1920.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
